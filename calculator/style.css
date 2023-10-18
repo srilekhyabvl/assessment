@@ -1,0 +1,45 @@
+.text-center{
+    text-align: center;
+}
+.mx-auto{
+    margin: auto;
+}
+.flex{
+display: flex;
+}
+.flex-col{
+flex-direction: column;
+}
+.items-center{
+align-items: center;
+}
+.btn{
+    width:54px;
+    height: 54px;
+    cursor: pointer;
+    font-weight: bold ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+}
+.input{
+    width: 155px;
+    height: 49px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold ;
+    font-family: 'Times New Roman', Times, serif;
+}
+.row,.row1{
+    display: flex;
+}
+.bg-gray{
+    background-color: rgb(104, 98, 98);
+    color: white;
+}
+.bg-green{
+    background-color: rgb(5, 141, 112);
+    color: white;
+}

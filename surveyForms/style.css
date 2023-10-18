@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Zilla+Slab:ital,wght@1,300;1,400&display=swap');
+*{
+    font-family: 'IBM Plex Serif', serif;
+}
+h1 {
+    text-align: center;
+}
+
+label {
+    margin: auto;
+    width: 100px;
+    display: inline-block;
+}
+
+.container {
+    display: block;
+    margin-top: 63px;
+    background-color: rgb(123, 227, 176);
+    max-width: 700px;
+    padding: 34px;
+    margin-left: 378px;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+
+.row {
+    display: flex;
+}
+
+#fname,
+#lname,
+#dob,
+#country,
+#profession,
+#email {
+    width: 200px;
+    height: 34px;
+    margin: 13px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#phone {
+    width: 154px;
+    height: 34px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#submit,
+#reset {
+    margin: 23px;
+    text-align: center;
+    width: 73px;
+    height: 33px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}

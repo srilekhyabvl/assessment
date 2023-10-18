@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Survey Form!!</h1>
+    <div class="container">
+        <form action="" id="myform">
+            <div class="row">
+                <h4>First Name</h4>
+                <input type="text" name="fname" id="fname" required />
+                <h4>Last Name</h4>
+                <input type="text" name="lname" id="lname" required />
+            </div>
+            <div class="row">
+                <h4>Date of Birth</h4>
+                <input type="date" name="dob" id="dob" required />
+                <h4>Select Country</h4>
+                <select id="country" name="country" required>
+                    <option value="">Select</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="france">France</option>
+                    <option value="germany">Germany</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    <option value="india">India</option>
+                </select>
+            </div>
+
+            <h4>Your Gender</h4>
+            <input type="radio" id="male" value="Male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="Female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="others" value="Others" name="gender">
+            <label for="others">Others</label>
+
+            <div class="row">
+                <h4>Profession</h4>
+                <input type="text" name="prof" id="profession" required>
+                <h4>Email</h4>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <h4>Mobile Number</h4>
+            <input type="text" name="phone" id="phone" required>
+        </form>
+        <input type="submit" value="Submit" id="submit" onclick="validate()">
+        <input type="reset" value="Reset" id="reset" onclick="reset()">
+    </div>
+    <div id="popup" style="display: none;">
+        <h2>Check your Details</h2>
+        <ul id="submittedData"></ul>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+</body>
+
+</html>
